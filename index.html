@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Pasapalabra The Game</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+	<header id="header"><h1>Pasapalabra The Game</h1></header>
+		<div id="letters_group">
+			<span class="letters">A</span>
+			<span class="letters">B</span>
+			<span class="letters">C</span>
+			<span class="letters">D</span>
+			<span class="letters">E</span>
+			<span class="letters">F</span>
+			<span class="letters">G</span>
+			<span class="letters">H</span>
+			<span class="letters">I</span>
+			<span class="letters">J</span>
+			<span class="letters">K</span>
+			<span class="letters">L</span>
+			<span class="letters">M</span>
+			<span class="letters">N</span>
+			<span class="letters">Ñ</span>
+			<span class="letters">O</span>
+			<span class="letters">P</span>
+			<span class="letters">Q</span>
+			<span class="letters">R</span>
+			<span class="letters">S</span>
+			<span class="letters">T</span>
+			<span class="letters">U</span>
+			<span class="letters">V</span>
+			<span class="letters">W</span>
+			<span class="letters">X</span>
+			<span class="letters">Y</span>
+			<span class="letters">Z</span>
+		</div>
+			<p id="definition"></p>
+		<div id="btn_group">
+			<div id="btn_hid">
+				<input id="answer" type="text" autocomplete="off" placeholder="Escribe tu respuesta" autofocus="" >
+				<button id="ok" class="btn" onclick="answerCheck()">OK</button>
+				<button id="pasapalabra" class="btn" onclick="showNext()">PASAPALABRA</button>
+				<button id="stop" class="" onclick="stopGame()">STOP</button>
+			</div>
+			<button id="play" class="btn" onclick="ask4Name()">NUEVA PARTIDA</button>
+			<button id="gameOver" onclick="location.reload()">GAME OVER</button>
+		</div> 
+		<div id="results_div">
+			<p id="results"></p>
+		</div>
+		<div id="animations">
+			<a href="#" id="animation_hid"><img src="animations/mush.gif"></a>
+			<a href="#" id="megaman_hid"><img src="animations/megaman.gif"></a>
+		</div>
+		<div id="div_name">
+			<input id="name" type="text" autocomplete="off" autofocus="" placeholder="Nombre aquí">
+			<button id="okName" class="btn" onclick="sendName()">OK</button>
+		</div>
+		<button id="highscores" class="btn" onclick="showScores()">CLASIFICACIÓN</button>
+		<div id="ranking_show">
+			<h2 id="title_class" >CLASIFICACIÓN</h2>
+				<ol id="ol_list">
+					<li>1. MISAN - 27 aciertos y 0 errores</li>
+					<li>2. P4CO PILL - 14 aciertos y 10 errores</li>
+					<li>3. B[i]G Fi$H - 0 aciertos y 0 errores</li>
+					<li>4. Nuevo Jugador - 0 aciertos y 0 errores</li>
+					<li>5. Nuevo Jugador - 0 aciertos y 0 errores</li>
+					<li>6. Nuevo Jugador - 0 aciertos y 0 errores</li>
+				</ol>
+		</div>
+		<button id="startScreen" onclick="location.reload()">VOLVER</button><br>
+		<button id="soundBtn" class="" onclick="soundBtn()">music on</button>
+		<a href="#" id="heroes"><img src="animations/heroes.gif"></a>
+	<script type="text/javascript" src="JS/app.js"></script>
+</body>
+</html>
